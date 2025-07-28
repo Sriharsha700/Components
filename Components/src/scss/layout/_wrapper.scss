@@ -1,0 +1,8 @@
+@use '../utils/' as u;
+
+.wrapper {
+
+    max-width: min(calc(100% - u.rem(48)), u.rem(1200)); //This is also another good way of setting mix-width
+    margin-inline: auto;
+
+}

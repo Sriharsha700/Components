@@ -1,0 +1,14 @@
+//700,900 and 1440px
+
+$breakpoints-up: (
+    "medium":43.75em,
+    //1em is 16px typically,it is default font size in browser
+    "large":53.25em,
+    "xlarge":90em
+);
+
+@mixin breakpoint($size) {
+    @media(min-width: map-get($breakpoints-up, $size)) {
+        @content;
+    }
+}

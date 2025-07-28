@@ -1,0 +1,14 @@
+:root {
+    --main-bg: hsl(0, 0%, 100%);
+    --text-dark: #383A4A;
+    --text-light: #ffffff;
+    --hero-bg: #495BCF;
+    --button-primary-bg: #00D3D4;
+    --button-primary-text: #383A4A;
+    --button-secondary-bg: transparent; //technically it is black with zero opacity
+    --button-secondary-text: #ffffff;
+    --button-secondary-border: #ffffff;
+    --fullwidth-bg: #BF1085;
+}
+
+//variables in root can be considered as Global variables

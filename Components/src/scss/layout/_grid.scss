@@ -1,0 +1,30 @@
+@use '../utils/' as u;
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    gap: 40px;
+    max-width: 1000px; //Your content won't go super-wide even on very large screens
+    max-width: min(calc(100% - 40px), 1000px); //This is also another good way of setting mix-width
+
+    //margin-inline: auto; //This property will always keeps the content at center, auto is applied horizontally
+    //Note that you can also achieve the same using display property of flex and justify-content to center on body tag 
+    @include u.breakpoint(large) {
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: auto;
+    }
+
+    &__main,
+    &__sidebar {
+        padding: 40px;
+    }
+
+    &__main {
+        background-color: blue;
+    }
+
+    &__sidebar {
+        background-color: magenta;
+    }
+}

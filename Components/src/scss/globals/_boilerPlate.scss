@@ -1,0 +1,25 @@
+@use '../utils' as u;
+
+html {
+    box-sizing: border-box;
+    font-size: 100%; //means 100% of the default font-size set in the browser
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit; //inherits box-sizing from html
+}
+
+body {
+    //Below are some reset rules and soome basic styling
+    font-family: u.$font;
+    background-color: #666666;
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; //content is always centered using flex and justify-content to center
+}
+
+//Note that global variables can be declared in this file.

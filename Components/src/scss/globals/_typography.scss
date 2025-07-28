@@ -1,0 +1,32 @@
+h1,
+h2,
+h3 {
+    font-weight: 700;
+    line-height: 1.1;
+    margin-top: 0; //removing default margins
+}
+
+h1 {
+    font-size: 2.625rem;
+    font-size: clamp(2.625rem, 1.77rem + 3.64vw, 4.5rem);
+}
+
+h2 {
+    font-size: clamp(2.625rem, 1.77rem + 3.64vw, 3.5rem);
+}
+
+h3 {
+    font-size: clamp(2.625rem, 1.77rem + 3.64vw, 2.5rem);
+
+}
+
+p {
+    margin-top: o;
+    font-size: 2.625rem;
+}
+
+a,
+a:visited,
+a:active {
+    text-decoration: none;
+}
